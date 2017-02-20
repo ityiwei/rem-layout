@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;list-style:none;text-decoration:none;}
+	a{color:#000;}
+	<!--基准点是375   2倍距离  除以2*20 = 40-->
+	html{font-size:20px;font-family:微软雅黑;}
+	html,body{height:100%;}
+	.wark{width:18.75rem;display:-webkit-box;-webkit-box-orient:vertical;height:100%;overflow:hidden;}
+	.wark header{width:18.75rem;height:2.1rem;text-align:center;line-height:2.1rem;position:relative;}
+	header a{width:2.3rem;height:1.1rem;display:block;text-align:right;position:absolute;left:0.425rem;font-size:0.65rem;line-height:1.1rem;top:0.575rem;}
+	header a img{width:0.375rem;height:0.65rem;position:absolute;top:0.175rem;left:0;}
+	header h1{font-size:0.9rem;font-family:黑体;}
+	.wark .main{background:#ececf4;width:18.75rem;padding-top:0.75rem;-webkit-box-flex:1;}
+	.main .head{width:18.75rem;height:5.5rem;margin-bottom:0.65rem;}
+	.head img{width:100%;height:100%;}
+	.main nav{width:18.75rem;height:1.8rem;background:#fcfcfc;margin-bottom:0.575rem;}
+	nav ul li{float:left;text-align:center;width:6.25rem;height:1.35rem;margin-top:0.25rem;}
+	nav ul li:nth-child(2){border-left:1px solid #dcdcdc;box-sizing:border-box;border-right:1px solid #dcdcdc;}
+	nav ul li a{width:3.225rem;height:1.2rem;display:inline-block;margin-top:0.125rem;background:#fff;}
+	nav ul li a i{width:0.725rem;height:0.95rem;background:url(image1/nav-01.png) no-repeat;background-size:100%;float:left;margin-left:0.125rem;margin-top:0.05rem;}
+	nav ul li:nth-child(2) a i{background:url(image1/nav-02.png) no-repeat;width:0.95rem;height:0.925rem;background-size:100%;}
+	nav ul li:nth-child(3) a i{background:url(image1/nav-03.png) no-repeat;width:0.925rem;height:0.9rem;background-size:100%;}
+	nav ul li a span{float:left;margin-left:0.575rem;font-size:0.75rem;margin-top:0.2rem;}
+	.main .list{width:18.75rem;background:#fcfcfc;overflow:hidden;margin-bottom:0.95rem;}
+	.list ul{width:18.375rem;padding-left:0.375rem;}
+	.list ul li{width:100%;height:1.625rem;line-height:1.625rem;}
+	.list ul li:nth-child(1){border-bottom:1px solid #e4e4e4;}
+	.list ul li span{float:left;height:0.825rem;background:#ffffff;line-height:0.825rem;font-size:0.625rem;padding:0 0.075rem 0 0.175rem;margin-top:0.4rem;}
+	.list ul li a{float:right;width:1.1rem;height:0.9rem;background:#fff;margin-top:0.325rem;margin-right:0.35rem;}
+	.list ul li a i{width:0.375rem;height:0.6rem;background:url(image1/right-arrows.png) no-repeat;background-size:100%;display:block;margin-left:0.475rem;margin-top:0.15rem;}
+	.main .list_sound{margin-bottom:0.725rem;}
+	.list_sound ul li a{width:1.975rem;height:1.1rem;background:#4cd864;border-radius:0.425rem;position:relative;}
+	.list_sound ul li a i{width:1.05rem;height:1.05rem;background:#fff;border-radius:50%;position:absolute;left:0.875rem;top:0.05rem;margin:0; cursor:pointer;}
+	.list_hot ul li:nth-child(2){border-bottom:1px solid #e4e4e4;}
+	.list_hot ul li:nth-child(3){border-bottom:1px solid #e4e4e4;}
+	footer{width:18.75rem;height:2.275rem;background:#fff;position:relative;}
+	footer ul{width:18.75rem;height:2.275rem;display:-webkit-box;}
+	footer ul li{-webkit-box-flex:1;text-align:center;height:1.9rem;padding-top:0.375rem;}
+	footer ul li a{display:block;width:100%;height:100%;}
+	footer ul li:nth-child(1) i{width:1.025rem;height:1.05rem;background:url(image1/footer-01.png) no-repeat;background-size:100%;display:block;margin:0 auto;}
+	footer ul li:nth-child(2) i{width:1.1rem;height:0.95rem;background:url(image1/footer-02.png) no-repeat;background-size:100%;display:block;margin:0 auto;margin-top:0.075rem;}
+	footer ul li:nth-child(3) i{width:1.05rem;height:1.05rem;background:url(image1/footer-03.png) no-repeat;background-size:100%;display:block;margin:0 auto;}
+	footer ul li:nth-child(4) i{width:1.075rem;height:1.1rem;background:url(image1/footer-04.png) no-repeat;background-size:100%;display:block;margin:0 auto;}
+	footer ul li p{font-size:0.6rem;margin-top:0.1rem;}
+	footer .message{width:0.475rem;height:0.475rem;;background:#f05050;color:#fff;position:absolute;left:16.45rem;top:0.15rem;border-radius:50%;font-size:0.25rem;text-align:center;line-height:0.475rem;}
+</style>
+<script>
+	;(function(){
+		function change(){
+			document.documentElement.style.fontSize = 20*document.documentElement.clientWidth/375+'px';
+		}
+		change();
+		window.addEventListener('resize',change,false);
+	})();
+</script>
+</head>
+<body>
+	<section class="wark">
+    	<header>
+        	<a href="javascript:;"><img src="image1/left-arrows.png" />返回</a>
+            <h1>个人中心</h1>
+        </header>
+    	<section class="main">
+        	<div class="head"><img src="image1/head.png" /></div>
+            <nav>
+            	<ul>
+                	<li><a href="javascript:;"><i></i><span>订单</span></a></li>
+                	<li><a href="javascript:;"><i></i><span>收藏</span></a></li>
+                	<li><a href="javascript:;"><i></i><span>推荐</span></a></li>
+                </ul>
+            </nav>
+            <div class="list">
+            	<ul>
+                	<li><span>修改个人资料</span><a href="javascript:;"><i></i></a></li>
+                	<li><span>修改密码</span><a href="javascript:;"><i></i></a></li>
+                </ul>
+            </div>
+            <div class="list list_sound">
+            	<ul>
+                	<li><span>声音推送通知</span><a href="javascript:;"><i></i></a></li>
+                </ul>
+            </div>
+            <div class="list list_hot">
+            	<ul>
+                	<li><span>猜你喜欢</span><a href="javascript:;"><i></i></a></li>
+                	<li><span>附近热门</span><a href="javascript:;"><i></i></a></li>
+                	<li><span>推荐商家</span><a href="javascript:;"><i></i></a></li>
+                	<li><span>设置</span><a href="javascript:;"><i></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+        	<ul>
+            	<li><a href="javascript:;"><i></i><p>首页</p></a></li>
+            	<li><a href="javascript:;"><i></i><p>商家</p></a></li>
+            	<li><a href="javascript:;"><i></i><p>购物车</p></a></li>
+            	<li><a href="javascript:;"><i></i><p>个人中心</p></a></li>
+            </ul>
+            <div class="message">1</div>
+        </footer>
+    </section>
+</body>
+</html>
